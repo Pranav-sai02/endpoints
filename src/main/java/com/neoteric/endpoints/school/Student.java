@@ -12,13 +12,13 @@ public class Student {
 
     private String studentName;
     private String studentAge;
-    private String Class;
+    private String aClass;
     private List<Subject> subjects;
 
     public Student(String studentName, String studentAge, String aClass, List<Subject> subjects) {
         this.studentName = studentName;
         this.studentAge = studentAge;
-        Class = aClass;
+        aClass = aClass;
         this.subjects = subjects;
     }
 }

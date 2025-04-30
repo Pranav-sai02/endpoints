@@ -18,7 +18,7 @@ public class Student {
     public Student(String studentName, String studentAge, String aClass, List<Subject> subjects) {
         this.studentName = studentName;
         this.studentAge = studentAge;
-        aClass = aClass;
+        this.aClass = aClass;
         this.subjects = subjects;
     }
 }

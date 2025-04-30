@@ -20,6 +20,10 @@ public class Employee {
     private List<Certificates> certificates;
     private String empId;
 
+    public Employee(){
+
+    }
+
 
     public Employee(String employeeName, int age, long employeeNumber, Address address, List<Nominee> nominee, List<Email> email, List<Account> bankAccounts, List<Certificates> certificates,String empId) {
         this.employeeName = employeeName;

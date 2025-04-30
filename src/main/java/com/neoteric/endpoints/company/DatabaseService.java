@@ -20,7 +20,7 @@ public class DatabaseService {
         String sql2 = "INSERT INTO addresses (state, street, houseNumber, empId) VALUES (?, ?, ?, ?)";
         String sql3 = "INSERT INTO nominee (nomineeName, nomineeAge , nomineeNumber, relationToEmployee, empId) VALUES (?, ?, ?, ?, ?)";
         String sql4 = "INSERT INTO Emails (email, empId) VALUES (?, ?)";
-        String sql5 = "INSERT INTO Account (accountType, accountNumber, empId) VALUES (?, ?, ?)";
+        String sql5 = "INSERT INTO BankAccounts (accountType, accountNumber, empId) VALUES (?, ?, ?)";
         String sql6 = "INSERT INTO Certificates (certificate, empId) VALUES (?, ?)";
 
         try (Connection connection = MySqlConnection.getConnection()) {
@@ -97,4 +97,3 @@ public class DatabaseService {
         return generatedEmpId;
     }
 }
-

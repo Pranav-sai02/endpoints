@@ -15,7 +15,7 @@ public class EmployeeController {
     @PostMapping("/employee")
     public String createEmployee(@RequestBody Employee employee) {
         String empId = databaseService.generateEmpId(employee);
-        employee.getAddress().setEmpId(empId);
+        employee.setEmpId(empId);
         databaseService.insertEmployee(employee);
 
         return "Employee created with ID: " + empId;

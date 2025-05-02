@@ -14,7 +14,7 @@ public class DatabaseService {
     }
 
     public String insertEmployee(Employee employee) {
-        String generatedEmpId = employee.getAddress().getEmpId();
+        String generatedEmpId = employee.getEmpId();
 
         String sql1 = "INSERT INTO employees (empId, employeeName, age, employeeNumber) VALUES (?, ?, ?, ?)";
         String sql2 = "INSERT INTO addresses (state, street, houseNumber, empId) VALUES (?, ?, ?, ?)";
@@ -97,4 +97,3 @@ public class DatabaseService {
         return generatedEmpId;
     }
 }
-

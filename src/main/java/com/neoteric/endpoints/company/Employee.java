@@ -18,17 +18,23 @@ public class Employee {
     private List<Email> Email;
     private List<Account> BankAccounts;
     private List<Certificates> certificates;
+    private String empId;
+
+    public Employee(){
+
+    }
 
 
-    public Employee(String employeeName, int age, long employeeNumber, Address address, List<Nominee> nominee, List<Email> email, List<Account> bankAccounts, List<Certificates> certificates) {
+    public Employee(String employeeName, int age, long employeeNumber, Address address, List<Nominee> nominee, List<Email> email, List<Account> bankAccounts, List<Certificates> certificates,String empId) {
         this.employeeName = employeeName;
         this.age = age;
         this.employeeNumber = employeeNumber;
         this.address = address;
         this.nominee = nominee;
-        Email = email;
-        BankAccounts = bankAccounts;
+        this.Email = email;
+        this.BankAccounts = bankAccounts;
         this.certificates = certificates;
+        this.empId = empId;
     }
 }
 

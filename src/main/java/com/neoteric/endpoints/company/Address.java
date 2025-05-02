@@ -11,7 +11,6 @@ public class Address {
     private String state;
     private String street;
     private String houseNumber;
-    private String empId;
 
 
 
@@ -19,10 +18,9 @@ public class Address {
     public Address() {
     }
 
-    public Address(String state, String street, String houseNumber, String empId) {
+    public Address(String state, String street, String houseNumber) {
         this.state = state;
         this.street = street;
         this.houseNumber = houseNumber;
-        this.empId = empId;
     }
 }
